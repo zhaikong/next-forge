@@ -23,5 +23,14 @@
   "emmet.showExpandedAbbreviation": "never",
   "prettier.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "tailwindCSS.experimental.configFile": "packages/design-system/styles/globals.css"
+  "tailwindCSS.experimental.configFile": "packages/design-system/styles/globals.css",
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
